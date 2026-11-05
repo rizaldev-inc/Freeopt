@@ -1,115 +1,115 @@
-<div align="center"><img src="https://img.shields.io/badge/FREEOTP-PLATFORM-087FDB?style=for-the-badge" />
-<img src="https://img.shields.io/badge/API-LIVE-00C853?style=for-the-badge" />
-<img src="https://img.shields.io/badge/NODE.JS-22-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />⚡ FREEOTP BOT
+⚡ FREEOTP BOT — NOKOS MURAH
 
-NOKOS MURAH — VIRTUAL NUMBER & OTP PLATFORM
+Virtual Number & OTP Management Platform
 
-Platform Telegram Bot untuk mengelola nomor virtual, mendapatkan kode OTP secara otomatis, dan mengintegrasikan provider FREEOTP API.
+""FREEOTP" (https://img.shields.io/badge/PROVIDER-FREEOTP-087FDB?style=flat-square)" (https://www.rizaldev.cloud/freeotp)
+""Node.js" (https://img.shields.io/badge/NODE.JS-22-339933?style=flat-square&logo=nodedotjs)" (https://nodejs.org/)
+""Telegraf" (https://img.shields.io/badge/FRAMEWORK-TELEGRAF-26A5E4?style=flat-square)" (https://telegraf.js.org/)
+""API" (https://img.shields.io/badge/API-LIVE-00C853?style=flat-square)" (https://www.rizaldev.cloud/freeotp)
 
-POWERED BY FREEOTP API · DEVELOPED BY RIZALDEV
+Bot Telegram berbasis Node.js + Telegraf untuk mengelola nomor virtual, melakukan request nomor, monitoring OTP, dan mengintegrasikan FREEOTP API.
 
-"🌐 Dashboard OTP" (https://www.rizaldev.cloud/freeotp) · "👨‍💻 Developer" (https://www.rizaldev.cloud)
-
-</div>---
-
-📌 TABLE OF CONTENTS
-
-No.| Dokumentasi
-01| "Overview" (#-overview)
-02| "Features" (#-features)
-03| "System Architecture" (#-system-architecture)
-04| "Provider API" (#-provider-api)
-05| "Project Structure" (#-project-structure)
-06| "Installation" (#-installation)
-07| "Configuration" (#-configuration)
-08| "Bot Commands" (#-bot-commands)
-09| "OTP Workflow" (#-otp-workflow)
-10| "API Integration" (#-api-integration)
-11| "Troubleshooting" (#-troubleshooting)
-12| "Security" (#-security)
-13| "Developer" (#-developer)
-
----
-
-🚀 OVERVIEW
-
-FREEOTP Bot adalah aplikasi Telegram berbasis Node.js yang menggunakan FREEOTP API sebagai provider utama.
-
-Sistem dirancang untuk mempermudah pengguna dalam:
-
-- Memilih layanan virtual number.
-- Memilih negara yang tersedia.
-- Meminta nomor secara otomatis.
-- Menerima OTP melalui monitoring.
-- Mengelola nomor aktif.
-- Melihat riwayat OTP.
-- Mengakses fitur akun dan referral.
-
-System Information
-
-Information| Details
+Informasi| Detail
 Project| Nokos Murah
 Provider| FREEOTP
 Runtime| Node.js 22
 Framework| Telegraf
 API Protocol| REST API
 Response| JSON
-Database| Local Database
 Hosting| Pterodactyl
 Developer| Rizaldev
 Version| 2.0
 
+Official Links
+
+- 🌐 Dashboard OTP: https://www.rizaldev.cloud/freeotp
+- 👨‍💻 Developer: https://www.rizaldev.cloud
+- 🔌 Provider API: https://nokosproxy.riezallofficial.workers.dev
+
 ---
+
+📑 TABLE OF CONTENTS
+
+No.| Section| Description
+01| "Overview" (#-overview)| Pengenalan project
+02| "Features" (#-features)| Fitur bot
+03| "Architecture" (#-system-architecture)| Arsitektur sistem
+04| "Provider API" (#-provider-api)| Integrasi API
+05| "Structure" (#-project-structure)| Struktur file
+06| "Installation" (#-installation)| Instalasi Pterodactyl
+07| "Configuration" (#-configuration)| Konfigurasi bot
+08| "Commands" (#-bot-commands)| Perintah bot
+09| "OTP Workflow" (#-otp-workflow)| Alur OTP
+10| "Integration" (#-api-integration)| Contoh kode
+11| "Troubleshooting" (#-troubleshooting)| Solusi error
+12| "Security" (#-security)| Keamanan
+13| "Developer" (#-developer)| Informasi developer
+
+---
+
+🚀 OVERVIEW
+
+FREEOTP Bot merupakan aplikasi Telegram otomatis yang menggunakan FREEOTP API sebagai provider utama.
+
+Sistem memungkinkan pengguna untuk memilih layanan, memilih negara, meminta nomor virtual, serta memantau kode OTP melalui Telegram.
+
+Core System
+
+Module| Function
+Number Manager| Mengelola nomor virtual
+Service Manager| Mengambil daftar layanan
+Country Manager| Mengambil daftar negara
+OTP Monitor| Memantau OTP otomatis
+User Manager| Mengelola pengguna
+Referral System| Sistem referral
+Premium System| Pengelolaan premium
+Admin Manager| Administrasi bot
+Database| Penyimpanan data
 
 ✨ FEATURES
 
-<div align="center">📱 VIRTUAL NUMBER| 🔐 OTP SYSTEM
-Request Number| Automatic OTP Polling
-Multi Service| Latest OTP
-Multi Country| OTP History
-Change Number| Live OTP Feed
-Release Number| OTP Notifications
+📱 Virtual Number
 
-👤 USER SYSTEM| 🛡️ ADMIN SYSTEM
-User Profile| Admin Dashboard
-Referral System| Broadcast
-Premium Package| User Management
-Leaderboard| Maintenance Mode
-Number History| Bot Statistics
+- Request nomor virtual.
+- Multi-service.
+- Multi-country.
+- Dynamic country selection.
+- Change number.
+- Release number.
+- Active number management.
 
-</div>Feature Details
+🔐 OTP Management
 
-1. Virtual Number Management
+- Automatic OTP polling.
+- Latest OTP checking.
+- OTP history.
+- Live OTP feed.
+- OTP notifications.
+- Error handling.
 
-- Mengambil daftar layanan dari provider.
-- Menampilkan negara berdasarkan layanan.
-- Meminta nomor berdasarkan negara.
-- Menampilkan nomor yang berhasil diperoleh.
-- Mengganti atau melepaskan nomor.
+👤 User System
 
-2. OTP Management
-
-- Monitoring OTP otomatis.
-- Mengecek kode OTP terbaru.
-- Menampilkan riwayat OTP.
-- Notifikasi ketika OTP diterima.
-- Menangani timeout dan kegagalan provider.
-
-3. User Management
-
-- Profil pengguna.
-- Referral.
-- Premium.
+- User profile.
+- Referral system.
+- Premium package.
 - Leaderboard.
-- Riwayat aktivitas.
+- User history.
 
-4. Admin Management
+🛡️ Admin System
 
 - Admin panel.
-- Broadcast.
-- Statistik.
-- Maintenance.
-- Pengelolaan pengguna.
+- User management.
+- Broadcast messages.
+- Bot statistics.
+- Maintenance mode.
+
+📄 Additional Features
+
+- Export nomor aktif ke TXT.
+- Database lokal.
+- API timeout.
+- JSON response validation.
+- Automatic error handling.
 
 ---
 
@@ -119,34 +119,31 @@ flowchart TD
     A[Telegram User] --> B[Telegram Bot]
     B --> C[Node.js / Telegraf]
     C --> D[FREEOTP API]
-    D --> E[Services]
-    D --> F[Countries]
-    D --> G[Request Number]
-    G --> H[Active Number]
-    H --> I[OTP Monitoring]
-    I --> J[Latest OTP]
-    J --> K[Telegram Notification]
-    C --> L[Local Database]
-    C --> M[Admin System]
+    C --> E[Local Database]
+    C --> F[Admin System]
+
+    D --> G[Services]
+    D --> H[Countries]
+    D --> I[Request Number]
+    I --> J[Active Numbers]
+    J --> K[OTP Monitoring]
+    K --> L[Latest OTP]
+    L --> M[Telegram Notification]
 
 ---
 
 🔌 PROVIDER API
 
-FREEOTP API Configuration
+FREEOTP API
 
 Configuration| Value
 Provider| FREEOTP
 Base URL| "https://nokosproxy.riezallofficial.workers.dev"
 Authentication| Public API
-API Key| Not Required
-Request| GET / POST
+API Key| Tidak diperlukan menurut dokumentasi
+HTTP Methods| GET / POST
 Content Type| application/json
-Response| JSON
-
-API Base URL
-
-https://nokosproxy.riezallofficial.workers.dev
+Response Format| JSON
 
 API Endpoint Reference
 
@@ -155,17 +152,21 @@ GET| "/api/services"| Daftar layanan
 GET| "/api/countries"| Daftar negara
 POST| "/api/request_number"| Request nomor
 GET| "/api/my_numbers"| Nomor aktif
-POST| "/api/release_number"| Release nomor
+POST| "/api/release_number"| Lepas nomor
 GET| "/api/latest_otp"| OTP terbaru
 GET| "/api/my_otps"| Riwayat OTP
 GET| "/api/otp"| Live OTP feed
 GET| "/api/stats/detailed"| Statistik provider
 
-1. Services
+1. Get Services
+
+Mengambil daftar layanan yang tersedia.
+
+Request
 
 GET /api/services
 
-Contoh respons:
+Example Response
 
 {
   "success": true,
@@ -181,11 +182,15 @@ Contoh respons:
   ]
 }
 
-2. Countries
+2. Get Countries
+
+Mengambil negara berdasarkan layanan.
+
+Request
 
 GET /api/countries?service=WhatsApp
 
-Contoh respons:
+Example Response
 
 {
   "success": true,
@@ -203,21 +208,37 @@ Contoh respons:
 
 3. Request Number
 
+Meminta nomor virtual berdasarkan layanan dan negara.
+
+Request
+
 POST /api/request_number
 Content-Type: application/json
 
-Request Body:
+Request Body
 
 {
   "service": "WhatsApp",
   "country": "Indonesia"
 }
 
+Example Response
+
+{
+  "success": true,
+  "number": "6281234567890",
+  "id": "transaction_id"
+}
+
 4. My Numbers
+
+Mengambil nomor aktif.
 
 GET /api/my_numbers
 
 5. Release Number
+
+Melepaskan nomor aktif.
 
 POST /api/release_number
 Content-Type: application/json
@@ -228,25 +249,33 @@ Content-Type: application/json
 
 6. Latest OTP
 
+Mengambil kode OTP terbaru.
+
 GET /api/latest_otp?number=6281234567890
 
 7. OTP History
 
+Mengambil riwayat OTP.
+
 GET /api/my_otps?limit=10
 
-Filter nomor:
+Filter berdasarkan nomor:
 
 GET /api/my_otps?number=6281234567890&limit=10
 
 8. Live OTP Feed
 
+Mengambil feed OTP publik.
+
 GET /api/otp?count=10
 
-9. Statistics
+9. Detailed Statistics
+
+Mengambil statistik provider.
 
 GET /api/stats/detailed?period=daily
 
-«Contoh JSON merupakan ilustrasi dari dokumentasi provider. Implementasi harus menyesuaikan respons aktual API.»
+«Catatan: contoh respons di atas merupakan ilustrasi dokumentasi API. Struktur respons aktual harus mengikuti data yang dikembalikan provider.»
 
 ---
 
@@ -254,21 +283,28 @@ GET /api/stats/detailed?period=daily
 
 NOKOS-MURAH/
 │
-├── 📁 node_modules/
+├── .env
+├── .gitignore
+├── package.json
+├── README.md
 │
-├── 📄 .env
-├── 📄 .gitignore
-├── 📄 package.json
-├── 📄 README.md
+├── config.js
+├── database.js
+├── api.js
+├── index.js
+├── otp.js
 │
-├── 📄 config.js
-├── 📄 database.js
-├── 📄 api.js
-├── 📄 index.js
-│
-└── 📄 otp.js
+└── node_modules/
 
-File tambahan dapat tersedia sesuai versi project.
+File| Function
+".env"| Konfigurasi environment
+"package.json"| Dependencies dan scripts
+"config.js"| Konfigurasi bot
+"database.js"| Database management
+"api.js"| FREEOTP API integration
+"index.js"| Main application
+"otp.js"| OTP management
+"README.md"| Dokumentasi project
 
 ---
 
@@ -276,26 +312,28 @@ File tambahan dapat tersedia sesuai versi project.
 
 Requirements
 
-Sebelum menjalankan bot, persiapkan:
+Sebelum instalasi, siapkan:
 
 - Pterodactyl Panel.
 - Node.js 22.
 - Telegram Bot Token.
 - Telegram User ID Admin.
-- Source Code Nokos Murah.
+- Source code FREEOTP Bot.
 
 STEP 01 — Upload Project
 
 1. Login ke Pterodactyl Panel.
 2. Pilih server bot.
 3. Buka menu Files.
-4. Upload file ZIP.
+4. Upload ZIP project.
 5. Extract ZIP.
-6. Pastikan file "package.json" berada di root directory.
+6. Pastikan "package.json" berada di direktori utama.
 
 STEP 02 — Configure Environment
 
-Buka ".env" dan isi konfigurasi:
+Buka file ".env".
+
+Isi konfigurasi berikut:
 
 BOT_TOKEN=YOUR_TELEGRAM_BOT_TOKEN
 ADMIN_ID=YOUR_TELEGRAM_USER_ID
@@ -306,7 +344,7 @@ OTP_GROUP_ID=
 
 DATABASE_PATH=./database.json
 
-Configuration Reference
+Environment Reference
 
 Variable| Description
 "BOT_TOKEN"| Token Telegram Bot
@@ -315,17 +353,21 @@ Variable| Description
 "OTP_GROUP_ID"| Grup notifikasi OTP
 "DATABASE_PATH"| Lokasi database
 
-Pertahankan variabel konfigurasi lain yang memang digunakan oleh source code.
+Pertahankan konfigurasi tambahan yang memang dibutuhkan oleh source code.
 
 STEP 03 — Install Dependencies
 
-Buka Console Pterodactyl:
+Buka menu Console.
+
+Jalankan:
 
 npm install
 
 Tunggu hingga proses instalasi selesai.
 
 STEP 04 — Start Bot
+
+Jalankan:
 
 npm start
 
@@ -337,7 +379,7 @@ Gunakan startup command:
 
 npm start
 
-Pastikan server menggunakan Node.js 22.
+Pastikan server menggunakan Node.js 22 dan direktori kerja project sudah benar.
 
 ---
 
@@ -346,10 +388,10 @@ Pastikan server menggunakan Node.js 22.
 User Commands
 
 Command| Description
-"/start"| Menu utama
-"/menu"| Menu bot
+"/start"| Membuka menu utama
+"/menu"| Menampilkan menu
 "/profile"| Profil pengguna
-"/referral"| Referral
+"/referral"| Informasi referral
 "/history"| Riwayat OTP
 "/numbers"| Nomor aktif
 "/help"| Bantuan
@@ -358,11 +400,11 @@ Admin Commands
 
 Command| Description
 "/admin"| Admin panel
-"/broadcast"| Broadcast
-"/stats"| Statistik
-"/maintenance"| Maintenance
+"/broadcast"| Broadcast pengguna
+"/stats"| Statistik bot
+"/maintenance"| Maintenance mode
 
-Ketersediaan perintah mengikuti implementasi source code.
+«Daftar perintah mengikuti implementasi aktual source code.»
 
 ---
 
@@ -373,7 +415,7 @@ flowchart TD
     B --> C[Select Service]
     C --> D[Select Country]
     D --> E[Request Number]
-    E --> F{Success?}
+    E --> F{API Success?}
     F -->|No| G[Show Error]
     G --> B
     F -->|Yes| H[Display Number]
@@ -386,7 +428,7 @@ flowchart TD
 
 ---
 
-💻 API INTEGRATION EXAMPLE
+💻 API INTEGRATION
 
 JavaScript Fetch
 
@@ -444,74 +486,75 @@ print_r($data);
 🧰 TROUBLESHOOTING
 
 <details>
-<summary><b>❌ Bot tidak bisa dijalankan</b></summary>Jalankan:
+<summary><strong>Bot tidak bisa dijalankan</strong></summary>Jalankan ulang:
 
 npm install
 npm start
 
-Pastikan Node.js sesuai dengan kebutuhan project.
+Periksa versi Node.js dan konfigurasi startup.
 
 </details><details>
-<summary><b>❌ BOT_TOKEN Invalid</b></summary>Periksa kembali token pada ".env".
-
-Jika token pernah bocor, buat token baru melalui BotFather.
+<summary><strong>BOT_TOKEN Invalid</strong></summary>Pastikan token Telegram pada ".env" benar dan masih aktif. Jika token bocor, segera regenerasi melalui BotFather.
 
 </details><details>
-<summary><b>❌ Provider API tidak merespons</b></summary>Tes endpoint:
+<summary><strong>Provider API tidak merespons</strong></summary>Tes endpoint berikut:
 
 https://nokosproxy.riezallofficial.workers.dev/api/services
 
-Periksa koneksi server, HTTP status, dan respons JSON.
+Periksa koneksi server dan respons JSON.
 
 </details><details>
-<summary><b>❌ Negara tidak muncul</b></summary>Pastikan layanan yang dikirim ke "/api/countries" sama persis dengan nama layanan dari "/api/services".
+<summary><strong>Negara tidak muncul</strong></summary>Pastikan nama layanan yang dikirim sama persis dengan data dari "/api/services".
 
 </details><details>
-<summary><b>❌ OTP tidak masuk</b></summary>Periksa status nomor, layanan, respons "/api/latest_otp", dan koneksi provider.
+<summary><strong>OTP tidak diterima</strong></summary>Periksa status nomor, layanan, negara, dan respons "/api/latest_otp".
 
 </details><details>
-<summary><b>❌ Database Error</b></summary>Periksa permission direktori dan lokasi database. Pastikan proses Node.js dapat membaca dan menulis file.
+<summary><strong>Database Error</strong></summary>Periksa permission direktori dan pastikan proses Node.js dapat membaca serta menulis database.
 
 </details>---
 
 🛡️ SECURITY & BEST PRACTICES
 
-- Jangan membagikan file ".env".
-- Jangan mempublikasikan token bot.
-- Validasi semua input pengguna.
-- Gunakan timeout API.
-- Terapkan rate limiting.
-- Lindungi akses admin.
-- Jangan menyimpan OTP sensitif tanpa perlindungan.
+- Jangan membagikan ".env".
+- Jangan mempublikasikan BOT_TOKEN.
+- Validasi seluruh input pengguna.
 - Gunakan HTTPS.
-- Simpan backup database secara berkala.
+- Terapkan rate limiting.
+- Gunakan timeout untuk API request.
+- Batasi akses admin berdasarkan Telegram ID.
+- Lindungi data pengguna.
+- Buat backup database secara berkala.
+
+Security Notice: Public API tidak berarti semua data yang dikembalikan boleh disebarluaskan. Lindungi nomor dan informasi OTP pengguna.
 
 ---
 
 🌐 OFFICIAL RESOURCES
 
-Resource| Link
-FREEOTP Dashboard| https://www.rizaldev.cloud/freeotp
-Developer Website| https://www.rizaldev.cloud
-Provider API| https://nokosproxy.riezallofficial.workers.dev
+Resource| URL
+FREEOTP Dashboard| "Open Dashboard" (https://www.rizaldev.cloud/freeotp)
+Developer Website| "Rizaldev.cloud" (https://www.rizaldev.cloud)
+Provider API| "FREEOTP API" (https://nokosproxy.riezallofficial.workers.dev)
 
 ---
 
-<div align="center">👨‍💻 DEVELOPED BY
+👨‍💻 DEVELOPER
 
-<img src="https://www.rizaldev.cloud/logo.png" width="100" alt="Rizaldev Logo" />RIZALDEV
+RIZALDEV
 
-Backend Developer · API Integration · Bot Developer
+Backend Developer · API Integration · Telegram Bot Developer
 
-"🌐 rizaldev.cloud" (https://www.rizaldev.cloud)
-
-"⚡ FREEOTP DASHBOARD" (https://www.rizaldev.cloud/freeotp)
+- Website: https://www.rizaldev.cloud
+- Dashboard: https://www.rizaldev.cloud/freeotp
 
 ---
 
-<img src="https://img.shields.io/badge/POWERED%20BY-FREEOTP-087FDB?style=for-the-badge" />FREEOTP BOT — NOKOS MURAH
+<div align="center">FREEOTP BOT — NOKOS MURAH
 
-Built with ❤️ by Rizaldev
+Powered by FREEOTP API
+
+Developed with ❤️ by Rizaldev
 
 © 2026 Rizaldev. All Rights Reserved.
 
